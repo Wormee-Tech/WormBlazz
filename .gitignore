@@ -1,0 +1,40 @@
+## Documents
+/docs
+
+## Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.coverage
+.cache/
+
+## IDE
+.idea/
+.vscode/
+
+## Node / Frontend
+node_modules/
+dist/
+dist-ssr/
+*.local
+.env
+.env.*
+!.env.example
+
+## Vite
+*.sw?
+
+## TypeScript
+*.tsbuildinfo
+
+## OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+## Temp
+*.tmp
+*.temp
+*.log

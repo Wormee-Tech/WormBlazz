@@ -1,0 +1,21 @@
+services:
+  wormblazz:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:8000"
+    volumes:
+      - wormblazz-cache:/app/cache
+    environment:
+      - WORMBLAZZ_CACHE_DIR=/app/cache
+      - APIFY_TOKEN=${APIFY_TOKEN:-}
+      - APIFY_INSTAGRAM_ACTOR=${APIFY_INSTAGRAM_ACTOR:-datadoping~instagram-followers-scraper}
+      - APIFY_TIKTOK_FOLLOWERS_ACTOR=${APIFY_TIKTOK_FOLLOWERS_ACTOR:-coregent~tiktok-followers-following-scraper}
+      - APIFY_TIKTOK_POSTS_ACTOR=${APIFY_TIKTOK_POSTS_ACTOR:-clockworks~tiktok-scraper}
+      - WORMBLAZZ_LOCAL_DELAY=${WORMBLAZZ_LOCAL_DELAY:-1.5}
+      - WORMBLAZZ_LOCAL_MAX_NODES=${WORMBLAZZ_LOCAL_MAX_NODES:-120}
+    restart: unless-stopped
+
+volumes:
+  wormblazz-cache:

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">WormBlazz</title>
+  <defs>
+    <linearGradient id="wb-gradient" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#111114"/>
+  <path
+    d="M11 17l9 30 12-22 12 22 9-30"
+    fill="none"
+    stroke="url(#wb-gradient)"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <circle cx="11" cy="17" r="4" fill="#a78bfa"/>
+  <circle cx="32" cy="25" r="4" fill="#6366f1"/>
+  <circle cx="53" cy="17" r="4" fill="#22d3ee"/>
+</svg>
